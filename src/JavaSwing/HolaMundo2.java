@@ -29,7 +29,7 @@ public class HolaMundo2 extends JFrame implements ActionListener{
         etiqueta.setFont(new Font("agent orange",Font.BOLD,20));
         panel1.add(etiqueta);
 
-        //boton
+
         boton2 = new JButton();
         boton2.setText("click");
         boton2.setBounds(200,200,100,50);

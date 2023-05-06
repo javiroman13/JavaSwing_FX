@@ -17,20 +17,17 @@ public class Ventana extends JFrame implements ActionListener{
 
     public Ventana(){
 
-        //ventana
+
         this.setSize(500,500);
         setTitle("Hola mundo");
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         setLocationRelativeTo(null);
 
-        //panel
         panel1 = new JPanel();
         panel1.setLayout(null);
         panel1.setBackground(Color.BLUE);
         this.getContentPane().add(panel1);
 
-
-        //etiqueta
         JLabel etiqueta = new JLabel("INGRESE NOMBRE",SwingConstants.CENTER);
         etiqueta.setSize(200,200);
         etiqueta.setLocation(150,5);
@@ -39,11 +36,8 @@ public class Ventana extends JFrame implements ActionListener{
         etiqueta.setFont(new Font("chiller",Font.BOLD,30));
         panel1.add(etiqueta);
 
-
-        //caja de texto
         CajaDeTexto();
 
-        //boton
         boton1 = new JButton();
         boton1.setText("click");
         boton1.setBounds(200,200,100,50);
@@ -63,8 +57,6 @@ public class Ventana extends JFrame implements ActionListener{
         }
     }
 
-
-    //caja de texto
     public void CajaDeTexto(){
     texto= new JTextField();
         texto.setBounds(150,150,200,30);
